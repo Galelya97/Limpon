@@ -1,3 +1,188 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  font-size: 16px;
+  color: #7581a1;
+  font-weight: 400;
+  line-height: 26px; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: #192b59;
+  text-transform: uppercase; }
+
+.nav {
+  font-size: 12px;
+  color: #6e7ea9;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.link-1 a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #1085e4; }
+
+.link-2 a {
+  color: #7e8bae;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #cbdbe8; }
+
+.btn-free {
+  color: #fff;
+  font-weight: 400;
+  background-color: #1085e4; }
+
+.grid h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #192b59;
+  text-transform: uppercase; }
+
+.grid h2 span {
+  font-size: 14px;
+  color: #1085e4;
+  font-weight: 800;
+  display: block; }
+
+.grid-item h3 {
+  font-size: 20px;
+  color: #192b59;
+  font-weight: 600; }
+
+.grid-item a {
+  font-size: 14px;
+  color: #1085e4;
+  font-weight: 600; }
+
+.grid-text p {
+  color: #1085e4;
+  font-size: 14px;
+  font: weight 400; }
+
+.grid-text span {
+  color: #192b59;
+  font-size: 16px;
+  font: weight 400; }
+
+.page-subscribe h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase; }
+
+.page-subscribe span {
+  font-size: 14px;
+  font-weight: 800;
+  color: #00bffe;
+  text-transform: uppercase;
+  display: block; }
+
+.page-subscribe a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b1c3ee; }
+
+.page-subscribe button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #1085e4; }
+
+.page-softwere h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }
+
+.page-softwere dt {
+  color: #5a6789;
+  font-size: 16px;
+  font-weight: 700; }
+
+.stat-title h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }
+
+.stat-title span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1085e4;
+  text-transform: uppercase;
+  display: block; }
+
+.stat-numbers span {
+  font-size: 60px;
+  font-weight: 800;
+  color: #a2b6c9;
+  text-transform: uppercase;
+  display: block; }
+
+.stat-numbers li {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1085e4;
+  text-transform: uppercase;
+  display: block; }
+
+.page-app h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }
+
+.app-p p {
+  color: #c4d2dd;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700; }
+
+.page-analititics h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }
+
+.page-analititics button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #1085e4; }
+
+.page-analititics-2 h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }
+
+.page-analititics-2 button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #1085e4; }
+
+.page-screen span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1085e4;
+  text-transform: uppercase;
+  display: block; }
+
+.page-screen h2 {
+  color: #192b59;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600; }

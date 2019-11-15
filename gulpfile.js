@@ -1,15 +1,13 @@
-var sass = require('gulp-sass');
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-const scss = function() {
+gulp.task('sass', function() {
   return gulp
-    .src('css/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
-    .pipe(sass())
-    .pipe(gulp.dest('css'));
-};
-
-gulp.task('sass', scss);
+    .src('./css/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist'));
+});
 
 gulp.task('watch', function() {
-  gulp.watch('css/**/*.scss', gulp.series('sass'));
+  gulp.watch('./css/**/*.scss', gulp.series('sass'));
 });

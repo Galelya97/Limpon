@@ -38,6 +38,17 @@ h1 {
   right: 0;
   top: 185px;
 }
+.robot {
+  display: block;
+  background-image: url(../img/robot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 354px;
+  height: 417px;
+  position: absolute;
+  right: 153px;
+  top: 52px;
+}
 /* PAGE */
 .page-header {
   background-image: url(../img/Home.png);
@@ -65,6 +76,23 @@ h1 {
 
 .page-screen {
   padding: 115px 0 0 0;
+}
+.page-subscribe {
+  knobbackground: rgba(10, 32, 144, 1);
+  background: -moz-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(10, 32, 144, 1)),
+    color-stop(100%, rgba(34, 117, 201, 1))
+  );
+  background: -webkit-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
+  background: linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2275c9', GradientType=1 );
+  height: 519px;
+  position: relative;
 }
 .wrap {
   max-width: 1115px;
@@ -179,11 +207,17 @@ h1 {
   font-size: 16px;
   font: weight 400;
 }
+.subscribe-block {
+  padding-top: 77px;
+}
 .page-subscribe h2 {
-  font-size: 50px;
-  font-weight: 600;
+  margin-bottom: 27px;
   color: #fff;
-  text-transform: uppercase;
+}
+.page-subscribe p {
+  margin-bottom: 41px;
+  color: #fff;
+  font-size: 18px;
 }
 .page-subscribe span {
   font-size: 14px;
@@ -203,7 +237,23 @@ h1 {
   font-size: 14px;
   font-weight: 700;
   background-color: #1085e4;
+  padding: 17px 40px;
+  position: absolute;
+  left: 343px;
+  bottom: 7px;
 }
+.subscribe-btn {
+  position: relative;
+}
+
+.subscribe-block input {
+  background: transparent;
+  border: 1px solid #456dbd;
+  border-radius: 37px;
+  width: 537px;
+  height: 63px;
+}
+
 .page-softwere h2 {
   color: #192b59;
   text-transform: uppercase;

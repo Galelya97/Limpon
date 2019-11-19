@@ -22,33 +22,6 @@ h1 {
   letter-spacing: -2.5px;
   margin-bottom: 65px;
 }
-/* IMG */
-.screen {
-  margin-top: 71px;
-  margin-bottom: -5px;
-}
-.screen-img {
-  display: block;
-  background-image: url(../img/header-scrin.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 888px;
-  height: 738px;
-  position: absolute;
-  right: 0;
-  top: 185px;
-}
-.robot {
-  display: block;
-  background-image: url(../img/robot.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 354px;
-  height: 417px;
-  position: absolute;
-  right: 153px;
-  top: 52px;
-}
 /* PAGE */
 .page-header {
   background-image: url(../img/Home.png);
@@ -78,7 +51,7 @@ h1 {
   padding: 115px 0 0 0;
 }
 .page-subscribe {
-  knobbackground: rgba(10, 32, 144, 1);
+  background: rgba(10, 32, 144, 1);
   background: -moz-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
   background: -webkit-gradient(
     left bottom,
@@ -91,9 +64,52 @@ h1 {
   background: -ms-linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
   background: linear-gradient(45deg, rgba(10, 32, 144, 1) 0%, rgba(34, 117, 201, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2275c9', GradientType=1 );
-  height: 519px;
-  position: relative;
+  padding: 48px 0px;
 }
+.page-analititics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 686px;
+}
+.page-analititics-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../img/bg2.png);
+  height: 691px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.screen {
+  margin-top: 71px;
+  margin-bottom: -5px;
+}
+.screen-img {
+  display: block;
+  background-image: url(../img/header-scrin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 888px;
+  height: 738px;
+  position: absolute;
+  right: 0;
+  top: 185px;
+}
+.robot {
+  background-image: url(../img/robot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 354px;
+  height: 417px;
+  right: 0;
+  top: 0;
+}
+
 .wrap {
   max-width: 1115px;
   margin: 0 auto;
@@ -208,7 +224,9 @@ h1 {
   font: weight 400;
 }
 .subscribe-block {
-  padding-top: 77px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .page-subscribe h2 {
   margin-bottom: 27px;
@@ -231,29 +249,37 @@ h1 {
   font-weight: 400;
   color: #b1c3ee;
 }
+.subscribe-users {
+  position: relative;
+}
+.subscribe-block-child {
+  flex-basis: 48%;
+}
+.subscribe-block input {
+  background: transparent;
+  border: 2px solid #456dbd;
+  border-radius: 37px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 230px 25px 37px;
+  color: #fff;
+}
 .page-subscribe button {
+  position: absolute;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   background-color: #1085e4;
   padding: 17px 40px;
-  position: absolute;
-  left: 343px;
-  bottom: 7px;
+  right: 10px;
+  top: 9px;
 }
-.subscribe-btn {
-  position: relative;
+.page-subscribe button,
+.subscribe-block input:focus {
+  outline: none;
 }
-
-.subscribe-block input {
-  background: transparent;
-  border: 1px solid #456dbd;
-  border-radius: 37px;
-  width: 537px;
-  height: 63px;
-}
-
 .page-softwere h2 {
   color: #192b59;
   text-transform: uppercase;
@@ -271,7 +297,6 @@ h1 {
   color: #192b59;
   font-size: 50px;
   font-weight: 600;
-  max-width: 500px;
   letter-spacing: -1.5px;
   line-height: 1.2;
 }
@@ -340,26 +365,6 @@ h1 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-}
-.page-analititics h2 {
-  color: #192b59;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.page-analititics button {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #1085e4;
-}
-.page-analititics-2 h2 {
-  color: #192b59;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600;
 }
 
 .page-analititics-2 button {
@@ -466,4 +471,25 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 100px 150px;
+}
+
+.analititics-box {
+  max-width: 619px;
+}
+.analititics-box h2 {
+  margin: 26px 0 25px 0;
+}
+.analititics-box p {
+  margin-bottom: 36px;
+}
+.analititics-2-text {
+}
+.analititics-2-text h2 {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  max-width: 424px;
+}
+.analititics-2-text p {
+  max-width: 599px;
+  margin-bottom: 35px;
 }

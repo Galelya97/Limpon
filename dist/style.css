@@ -12,19 +12,26 @@ a {
 
 h1 {
   font-size: 80px;
-  font-weight: 600;
+  font-weight: 640px;
   color: #192b59;
   max-width: 540px;
   line-height: 1.1;
   letter-spacing: -2.5px;
   margin-bottom: 65px; }
 
-/* IMG */
-.screen {
-  margin-top: 71px;
-  margin-bottom: -5px; }
-
 /* PAGE */
+.page-header {
+  background-image: url(../img/Home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 317px;
+  position: relative; }
+
+.page-company {
+  background-image: url(../img/spobsors-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .page-stat,
 .page-screen {
   background-color: #edf6ff; }
@@ -39,13 +46,70 @@ h1 {
 .page-screen {
   padding: 115px 0 0 0; }
 
+.page-subscribe {
+  background: #0a2090;
+  background: -moz-linear-gradient(45deg, #0a2090 0%, #2275c9 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #0a2090), color-stop(100%, #2275c9));
+  background: -webkit-linear-gradient(45deg, #0a2090 0%, #2275c9 100%);
+  background: -o-linear-gradient(45deg, #0a2090 0%, #2275c9 100%);
+  background: -ms-linear-gradient(45deg, #0a2090 0%, #2275c9 100%);
+  background: linear-gradient(45deg, #0a2090 0%, #2275c9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2275c9', GradientType=1 );
+  padding: 48px 0px; }
+
+.page-analititics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 686px; }
+
+.page-analititics-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../img/bg2.png);
+  height: 691px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.screen {
+  margin-top: 71px;
+  margin-bottom: -5px; }
+
+.screen-img {
+  display: block;
+  background-image: url(../img/header-scrin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 888px;
+  height: 738px;
+  position: absolute;
+  right: 0;
+  top: 185px; }
+
+.robot {
+  background-image: url(../img/robot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 354px;
+  height: 417px;
+  right: 0;
+  top: 0; }
+
 .wrap {
-  max-width: 1110px;
+  max-width: 1115px;
   margin: 0 auto; }
 
 .box-header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 59px;
+  margin-bottom: 305px; }
 
 .nav {
   display: flex;
@@ -58,10 +122,11 @@ h1 {
   padding: 0px; }
 
 .nav li {
-  padding: 0 15px; }
+  padding: 0 20px; }
 
 .nav-item {
-  color: #6e7ea9; }
+  color: #6e7ea9;
+  letter-spacing: 2px; }
 
 .btn-primary {
   color: #fff;
@@ -95,7 +160,7 @@ h1 {
 
 .btn-free {
   font-weight: 400;
-  padding: 20px 50px;
+  padding: 21px 54px;
   letter-spacing: 1.7px; }
 
 .btn-group a + a {
@@ -144,11 +209,19 @@ h1 {
   font-size: 16px;
   font: weight 400; }
 
+.subscribe-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .page-subscribe h2 {
-  font-size: 50px;
-  font-weight: 600;
+  margin-bottom: 27px;
+  color: #fff; }
+
+.page-subscribe p {
+  margin-bottom: 41px;
   color: #fff;
-  text-transform: uppercase; }
+  font-size: 18px; }
 
 .page-subscribe span {
   font-size: 14px;
@@ -162,12 +235,36 @@ h1 {
   font-weight: 400;
   color: #b1c3ee; }
 
+.subscribe-users {
+  position: relative; }
+
+.subscribe-block-child {
+  flex-basis: 48%; }
+
+.subscribe-block input {
+  background: transparent;
+  border: 2px solid #456dbd;
+  border-radius: 37px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 230px 25px 37px;
+  color: #fff; }
+
 .page-subscribe button {
+  position: absolute;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  background-color: #1085e4; }
+  background-color: #1085e4;
+  padding: 17px 40px;
+  right: 10px;
+  top: 9px; }
+
+.page-subscribe button,
+.subscribe-block input:focus {
+  outline: none; }
 
 .page-softwere h2 {
   color: #192b59;
@@ -184,7 +281,6 @@ h1 {
   color: #192b59;
   font-size: 50px;
   font-weight: 600;
-  max-width: 500px;
   letter-spacing: -1.5px;
   line-height: 1.2; }
 
@@ -252,25 +348,6 @@ h1 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700; }
-
-.page-analititics h2 {
-  color: #192b59;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600; }
-
-.page-analititics button {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #1085e4; }
-
-.page-analititics-2 h2 {
-  color: #192b59;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600; }
 
 .page-analititics-2 button {
   color: #fff;
@@ -361,5 +438,30 @@ h1 {
 
 .img-logo {
   background-image: url(../img/logo.png);
-  width: 50px;
-  height: 40px; }
+  width: 182px;
+  height: 49px; }
+
+.list-company {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 150px; }
+
+.analititics-box {
+  max-width: 619px; }
+
+.analititics-box h2 {
+  margin: 26px 0 25px 0; }
+
+.analititics-box p {
+  margin-bottom: 36px; }
+
+.analititics-2-text h2 {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  max-width: 424px; }
+
+.analititics-2-text p {
+  max-width: 599px;
+  margin-bottom: 35px; }

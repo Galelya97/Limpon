@@ -40,7 +40,7 @@ h1 {
   background-color: #edf6ff;
 }
 .page-stat {
-  padding: 108px 0 0 0;
+  padding: 108px 0 106px 0;
 }
 .page-plan,
 .page-screen {
@@ -76,6 +76,9 @@ h1 {
   background-size: cover;
   height: 686px;
 }
+.page-grid {
+  padding: 112px;
+}
 .page-analititics-2 {
   display: flex;
   justify-content: space-around;
@@ -109,12 +112,10 @@ h1 {
   right: 0;
   top: 0;
 }
-
 .wrap {
   max-width: 1115px;
   margin: 0 auto;
 }
-
 .box-header {
   display: flex;
   justify-content: space-between;
@@ -150,6 +151,7 @@ h1 {
   padding: 20px 40px;
   border-radius: 30px;
   letter-spacing: 2.5px;
+  transition: 0.3s;
 }
 .btn-primary:hover {
   background-color: #fff;
@@ -165,6 +167,7 @@ h1 {
   padding: 20px 40px;
   border-radius: 30px;
   letter-spacing: 2.5px;
+  transition: 0.3s;
 }
 .btn-secondary:hover {
   background-color: #fff;
@@ -174,6 +177,7 @@ h1 {
   font-weight: 400;
   padding: 21px 54px;
   letter-spacing: 1.7px;
+  transition: 0.3s;
 }
 .btn-group a + a {
   margin-left: 15px;
@@ -188,41 +192,9 @@ h1 {
   text-transform: uppercase;
   border-radius: 30px;
   letter-spacing: 2.5px;
+  transition: 0.3s;
 }
 
-.grid h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #192b59;
-  text-transform: uppercase;
-}
-.grid h2 span {
-  font-size: 14px;
-  color: #1085e4;
-  font-weight: 800;
-  display: block;
-}
-
-.grid-item h3 {
-  font-size: 20px;
-  color: #192b59;
-  font-weight: 600;
-}
-.grid-item a {
-  font-size: 14px;
-  color: #1085e4;
-  font-weight: 600;
-}
-.grid-text p {
-  color: #1085e4;
-  font-size: 14px;
-  font: weight 400;
-}
-.grid-text span {
-  color: #192b59;
-  font-size: 16px;
-  font: weight 400;
-}
 .subscribe-block {
   display: flex;
   justify-content: space-between;
@@ -280,12 +252,6 @@ h1 {
 .subscribe-block input:focus {
   outline: none;
 }
-.page-softwere h2 {
-  color: #192b59;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600;
-}
 
 .page-softwere dt {
   color: #5a6789;
@@ -329,10 +295,10 @@ h1 {
 .page-stat .stat-title-50,
 .page-screen .stat-title-40 {
   text-align: center;
-  margin: 0 auto;
 }
 .page-stat .stat-title-50 {
   max-width: 500px;
+  margin: 0 auto;
 }
 .stat-numbers {
   display: flex;
@@ -373,6 +339,14 @@ h1 {
   font-size: 14px;
   font-weight: 700;
   background-color: #1085e4;
+}
+.page-softwere-icon,
+.page-analititics-icon {
+  display: block;
+  background-image: url(../img/icon!.png);
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 95px;
 }
 
 .box-price {
@@ -441,7 +415,6 @@ h1 {
 .box-price-item .btn-info {
   padding: 19px 61px;
 }
-
 .box-price-item-active h3 {
   font-size: 70px;
   font-weight: 700;
@@ -482,8 +455,7 @@ h1 {
 .analititics-box p {
   margin-bottom: 36px;
 }
-.analititics-2-text {
-}
+
 .analititics-2-text h2 {
   margin-top: 27px;
   margin-bottom: 27px;
@@ -492,4 +464,88 @@ h1 {
 .analititics-2-text p {
   max-width: 599px;
   margin-bottom: 35px;
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    'a b c'
+    'd b c '
+    'd f g'
+    'e f g'
+    'e h h';
+  max-width: 1110px;
+  margin: 0 auto;
+  grid-gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-title {
+  grid-area: a;
+  padding: 0px 27px;
+}
+.grid-item-1 {
+  grid-area: b;
+}
+.grid-item-2 {
+  grid-area: c;
+}
+.grid-item-3 {
+  grid-area: d;
+}
+.grid-item-4 {
+  grid-area: e;
+}
+.grid-item-5 {
+  grid-area: f;
+}
+.grid-item-6 {
+  grid-area: g;
+}
+.grid-text {
+  grid-area: h;
+}
+.grid-item {
+  text-align: center;
+  box-shadow: 5px 9px 11px 6px #f4f4f4;
+  padding: 39px 32px;
+}
+
+.grid-item a {
+  color: #208de6;
+  font-weight: 600;
+  font-size: 16px;
+}
+.grid-icon {
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 32px;
+  height: 100px;
+}
+.grid-icon-3 {
+  background-image: url(../img/icon1.png);
+  width: 80px;
+}
+.grid-icon-1 {
+  background-image: url(../img/icon2.png);
+  width: 75px;
+}
+.grid-icon-2 {
+  background-image: url(../img/icon3.png);
+  width: 89px;
+}
+.grid-icon-4 {
+  background-image: url(../img/icon4.png);
+  width: 102px;
+}
+.grid-icon-5 {
+  background-image: url(../img/icon5.png);
+  width: 85px;
+}
+.grid-icon-6 {
+  background-image: url(../img/icon6.png);
+  width: 100px;
+}
+.grid-text span {
+  color: #192b59;
+  font-size: 16px;
+  font-weight: 800;
 }
